@@ -149,9 +149,6 @@ li {
 }
 
 
-
-
-
 .orange {
   color: var(--main-orange);
 }
@@ -220,6 +217,10 @@ li {
 
 #project2 {
   display: block;
+}
+
+#algovibes-image {
+  object-position: top left;
 
 }
 
