@@ -1,0 +1,6 @@
+
+#TODO: add two other projects
+#TODO: create media queries for phone compatibility
+#TODO: Add condensed nav menu
+#TODO: Add animations to welcome text
+#TODO: Add hover animations for the nav items, the project texts, and the social icons
