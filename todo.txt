@@ -1,5 +1,4 @@
 
-#TODO: Add shadows to project tiles
 #TODO: create media queries for phone compatibility
 #TODO: Add condensed nav menu
 #TODO: Add animations to welcome text

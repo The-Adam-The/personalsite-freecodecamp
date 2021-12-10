@@ -1,310 +1,642 @@
-
+/* for mobile */
 
 html {
-  height: 100%;
-  width: 100%;
-}
+    height: 100%;
+    width: 100%;
+  }
 
 body {
-  margin: 0 auto;
-  font-size: 1.8rem;
-  line-height: 1.4;
-  font-family: 'Source Code Pro', monospace;
-  width: auto;
-  overflow-x: hidden;
-}
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-family: 'Source Code Pro', monospace;
+    width: auto;
+    overflow-x: hidden;
+  }
 
 
 h1 {
-  color: var(--main-white);
-  font-size: 6rem;
-  font-weight: 500;
-  text-align: center;
-}
+    color: var(--main-white);
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
 
 h2 {
-  color: var(--main-white);
-  text-align: center;
-  font-weight: 400;
-}
+    color: var(--main-white);
+    font-weight: 400;
+  }
 
 a {
-  text-decoration: none;
-}
+    text-decoration: none;
+  }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px;
-  width: 100%;
-  z-index: 101;
-}
 
 .nav::before {
-  content: "";
-  /*background-color: #142F43;*/
-  /*background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue));*/
-  background-color: transparent;
-  opacity: 0.2;
-  position: absolute;
-  top:0;
-  bottom:0;
-  right: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index:-3;
+    content: "";
+    background-image: url("../images/honeycombog.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -3;
 
-}
+  }
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 101;
+  }
+.nav::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+      opacity: 0.8;
+      mix-blend-mode: multiply;
+      z-index: 1;
+    }
+
 
 .nav > * {
     z-index: 102;
-}
-
+  }
 
 
 li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
 
 
 .nav-list {
-  display: flex;
-  margin-right: 2rem;
-}
+    display: flex;
+    margin-right: 2rem;
+  }
 
 .nav-link {
     text-decoration: none;
     color: var(--main-orange);
     margin-left: 25px;
 
-}
-.nav-link:hover {
-  text-decoration: underline;
-  color: var(--main-orange);
+  }
 
-}
+.nav-link:hover {
+    text-decoration: underline;
+    color: var(--main-orange);
+
+  }
 
 .section {
-  height: 100vh;
-  width: auto;
-  padding: 90px 30px 30px;
-}
+    height: 100vh;
+    width: auto;
+    padding: 90px 30px 30px;
+  }
 
 .dark-back {
-  background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
-}
+    background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+  }
 
 .white-back {
-  background-color: var(--main-grey);
-}
+    background-color: var(--main-grey);
+  }
 
 #welcome-section {
-  padding: 0;
-  background-color: var(--main-blue);
-  background-image: url("../images/honeycombog.jpg");
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    padding: 0;
+    background-color: var(--main-blue);
+    background-image: url("../images/honeycombog.jpg");
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-}
-#welcome-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
-  opacity: 0.8;
-  mix-blend-mode:  multiply;
-  z-index: 1;
-}
+  }
+
+  #welcome-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
 
 #welcome-section > * {
     z-index: 100;
-}
+  }
 
 #welcome-text {
-  filter: contrast(100%);
-}
+    filter: contrast(100%);
+  }
 
 #welcome-text h1 {
-  margin-bottom: 0;
-}
+    margin-bottom: 0;
+  }
 
 #welcome-section p {
-  font-size: 2.5rem;
-   color: var(--main-red);
-   margin-top: 14px;
-   text-align: start;
-}
+    font-size: 2.5rem;
+    color: var(--main-red);
+    margin-top: 14px;
+    text-align: start;
+  }
 
-
+/* Colors */
 .orange {
-  color: var(--main-orange);
-}
+    color: var(--main-orange);
+  }
 
 .red {
-  color: var(--main-red);
-}
+    color: var(--main-red);
+  }
 
 .white {
-  color: var(--main-white);
-}
-.purple {
-  color: var(--main-purple)
-}
-.dark-red {
-  color: #E9315D;
-}
+    color: var(--main-white);
+  }
 
-/*Project Section*/
+.purple {
+    color: var(--main-purple)
+  }
+
+.dark-red {
+    color: #E9315D;
+  }
+
+  /*Project Section*/
+
+#projects {
+    height: auto;
+  }
 
 .heading {
-  margin: 0 auto 60px auto;
-}
+    margin: 10px auto 50px auto;
+    font-size: 2rem;
+    height: 5%;
+    text-align: center;
+  }
+
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 5rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto 6rem auto;
-
-
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto 4rem auto;
+  }
 
 .project-tile {
-  height: 60vh;
-  width: 40vh;
-  text-align: center;
-  background-color: var(--main-blue)
-
-}
+    height: 60vh;
+    width: 40vh;
+    text-align: center;
+    background-color: var(--main-blue);
+    box-shadow: 1px 4px 6px rgb(0 0 0 / 80%);
+    border-radius: 6px;
+  }
 
 .project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+  }
 
 .project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-  color: var(--main-white);
-  margin: 0 auto;
-  text-align: center;
-}
-
-#project1 {
-  display: block;
-}
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: var(--main-white);
+    margin: 0 auto;
+    text-align: center;
+  }
 
 #angela-image {
-  object-position: top;
-}
-
-
-#project2 {
-  display: block;
-}
+    object-position: top;
+  }
 
 #algovibes-image {
-  object-position: top left;
+    object-position: right;
+  }
 
-}
-
-#project3 {
-  display: block;
-
-}
-#project4 {
-  display: block;
-  background-color: var(--main-blue);
-}
-
-/*Contact page and footer*/
-
+  /*Contact page and footer*/
 #contact-and-footer {
-  height: 110vh;
-  width: 100vw;
-  background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
-}
+    height: 110vh;
+    width: 100vw;
+    background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+  }
 
 #contact {
-  height: 100vh;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+    height: auto;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 #contact p {
-  color: var(--main-white);
-  margin-left: 3px;
-
-}
+    color: var(--main-white);
+    font-size: 2.5rem;
+  }
 
 #contact-content h1 {
-  margin-bottom: 30px;
-}
+    margin-bottom: 50px;
+    margin-top: 150px;
+  }
 
 .icon-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 
 .icons {
-  height: 40px;
-  width: 40px;
-  margin: 0 5px 0 30px;
-  filter: invert(100%)
-}
-.icon-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+    height: 50px;
+    width: 50px;
+    margin: 0 8px 0 0;
+    filter: invert(100%)
+  }
 
-}
+.icon-link {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    padding: 0;
+
+  }
 
 footer {
-  height: 10vh;
-  position: absolute;
-  width: 100%;
-  background-color: transparent;
-}
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    background-color: transparent;
+  }
 
 footer p {
-  font-size: 1.5rem;
-  opacity: 0.5;
-}
+    font-size: 1rem;
+    opacity: 0.5;
+  }
 
 #legal-text {
-  float: right;
-  margin-right: 20px;
+   font-size: 1rem;
+    opacity: 0.5;
+    margin-right: 20px;
+  }
+
+  :root {
+    --main-grey: #EBEFF0;
+    --main-red: #d25875;
+    --main-blue: #142F43;
+    --main-orange: #FFA43D;
+    --main-purple: #B000B9;
+    --main-white: #F7FEFF;
+  }
+
+
+
+
+/* desktop app */
+
+@media only screen and (min-width: 768px) {
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-family: 'Source Code Pro', monospace;
+    width: auto;
+    overflow-x: hidden;
+  }
+
+
+  h1 {
+    color: var(--main-white);
+    font-size: 6rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--main-white);
+    text-align: center;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .nav::before {
+    content: "";
+    background-image: url("../images/honeycombog.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -3;
+
+  }
+
+    .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 101;
+  }
+    .nav::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+      opacity: 0.8;
+      mix-blend-mode: multiply;
+      z-index: 1;
+    }
 }
 
-:root {
-  --main-grey: #EBEFF0;
-  --main-red: #d25875;
-  --main-blue: #142F43;
-  --main-orange: #FFA43D;
-  --main-purple: #B000B9;
-  --main-white: #F7FEFF;
-}
+  .nav > * {
+    z-index: 102;
+  }
 
-/*EBEFF0*/
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+
+
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: var(--main-orange);
+    margin-left: 25px;
+
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    color: var(--main-orange);
+
+  }
+
+  .section {
+    height: 100vh;
+    width: auto;
+    padding: 90px 30px 30px;
+  }
+
+  .dark-back {
+    background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+  }
+
+  .white-back {
+    background-color: var(--main-grey);
+  }
+
+  #welcome-section {
+    padding: 0;
+    background-color: var(--main-blue);
+    background-image: url("../images/honeycombog.jpg");
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #welcome-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+
+  #welcome-section > * {
+    z-index: 100;
+  }
+
+  #welcome-text {
+    filter: contrast(100%);
+  }
+
+  #welcome-text h1 {
+    margin-bottom: 0;
+  }
+
+  #welcome-section p {
+    font-size: 2.5rem;
+    color: var(--main-red);
+    margin-top: 14px;
+    text-align: start;
+  }
+
+
+  .orange {
+    color: var(--main-orange);
+  }
+
+  .red {
+    color: var(--main-red);
+  }
+
+  .white {
+    color: var(--main-white);
+  }
+
+  .purple {
+    color: var(--main-purple)
+  }
+
+  .dark-red {
+    color: #E9315D;
+  }
+
+  /*Project Section*/
+  .heading {
+    margin: 0 auto 60px auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 6rem auto;
+
+
+  }
+
+  .project-tile {
+    height: 60vh;
+    width: 40vh;
+    text-align: center;
+    background-color: var(--main-blue);
+    box-shadow: 1px 4px 6px rgb(0 0 0 / 80%);
+    border-radius: 6px;
+  }
+
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+  }
+
+  .project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: var(--main-white);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #project1 {
+    display: block;
+
+  }
+
+  #angela-image {
+    object-position: top;
+  }
+
+
+  #project2 {
+    display: block;
+  }
+
+  #algovibes-image {
+    object-position: right;
+
+  }
+
+  #project3 {
+    display: block;
+
+  }
+
+  #project4 {
+    display: block;
+    background-color: var(--main-blue);
+  }
+
+  /*Contact page and footer*/
+  #contact-and-footer {
+    height: 110vh;
+    width: 100vw;
+    background-image: linear-gradient(32deg, #2A485F 10%, var(--main-blue) 90%);
+  }
+
+  #contact {
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #contact p {
+    color: var(--main-white);
+    margin-left: 3px;
+
+  }
+
+  #contact-content h1 {
+    margin-bottom: 30px;
+  }
+
+  .icon-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .icons {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 0 30px;
+    filter: invert(100%)
+  }
+
+  .icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+  }
+
+  footer {
+    height: 10vh;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+    opacity: 0.5;
+  }
+
+  #legal-text {
+    float: right;
+    margin-right: 20px;
+  }
+
+ }
